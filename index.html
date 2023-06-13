@@ -43,7 +43,7 @@
                                     <button class="bottone_xoxoxo" :class="task.completato ? '' : 'btn-primary' " @click="EventoCompletato(index)">
                                         <i class="fa-solid " :class="task.completato ? 'fa-x' : 'fa-check' " style="color: #ffffff;"></i>
                                     </button> 
-                                    <button class="bottone_trash">
+                                    <button class="bottone_trash" @click="Elimina(index)">
                                         <i class="fa-solid fa-trash" style="color: #ff0000;"></i>
                                     </button> 
                                 </div>

@@ -45,6 +45,9 @@ createApp({
     methods: {
         EventoCompletato(index){
             this.tasks[index].completato = !this.tasks[index].completato;
-        }
+        },
+        Elimina(index){
+            this.tasks.splice(index,1);
+        },
     },
 }).mount('#app');
