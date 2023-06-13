@@ -5,34 +5,36 @@ createApp({
         return{
             titolo: 'Vue Todolist',
 
+            sottotitolo: 'La mia Todolist :',
+
             tasks:[
                 {
-                    testo: 'anguria',
+                    testo: 'Anguria',
+                    completato: true
+                },
+                {
+                    testo: 'Aglio',
                     completato: false
                 },
                 {
-                    testo: 'aglio',
+                    testo: 'Cipolla',
+                    completato: true
+                },
+                {
+                    testo: 'Succo di frutta',
+                    completato: true
+                },
+                {
+                    testo: 'Melograno',
                     completato: false
                 },
                 {
-                    testo: 'cipolla',
+                    testo: 'Noodles',
                     completato: false
                 },
                 {
-                    testo: 'succo di frutta',
-                    completato: false
-                },
-                {
-                    testo: 'melograno',
-                    completato: false
-                },
-                {
-                    testo: 'noodles',
-                    completato: false
-                },
-                {
-                    testo: 'pomodoro',
-                    completato: false
+                    testo: 'Pomodoro',
+                    completato: true
                 },
 
             ]
