@@ -28,7 +28,9 @@ body{
 }
 
 
-.fa-trash{
+
+
+.fa-trash, .fa-check, .fa-x{
     padding: 5px;
 }
 
@@ -53,4 +55,11 @@ body{
 
 .rosso_non_completato{
     color: rgb(204, 38, 38);
+}
+
+
+.bottone_xoxoxo{
+    background-color: black;
+    border: 2px solid black;
+    margin-right: 5px ;
 }

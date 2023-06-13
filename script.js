@@ -10,7 +10,7 @@ createApp({
             tasks:[
                 {
                     testo: 'Anguria',
-                    completato: true
+                    completato: false
                 },
                 {
                     testo: 'Aglio',
@@ -18,11 +18,11 @@ createApp({
                 },
                 {
                     testo: 'Cipolla',
-                    completato: true
+                    completato: false
                 },
                 {
                     testo: 'Succo di frutta',
-                    completato: true
+                    completato: false
                 },
                 {
                     testo: 'Melograno',
@@ -34,7 +34,7 @@ createApp({
                 },
                 {
                     testo: 'Pomodoro',
-                    completato: true
+                    completato: false
                 },
 
             ]
@@ -43,6 +43,8 @@ createApp({
         }
     },
     methods: {
-        
+        EventoCompletato(index){
+            this.tasks[index].completato = !this.tasks[index].completato;
+        }
     },
 }).mount('#app');
