@@ -7,6 +7,8 @@ createApp({
 
             sottotitolo: 'La mia Todolist :',
 
+            nuova_task: '',
+
             tasks:[
                 {
                     testo: 'Anguria',
@@ -49,5 +51,17 @@ createApp({
         Elimina(index){
             this.tasks.splice(index,1);
         },
+        AggiungiElemento(){
+            
+            let oggetto = 
+            {
+                testo: this.nuova_task,
+                completato: false,
+            }
+
+            this.tasks.push(oggetto);
+
+            this.nuova_task='';
+        }
     },
 }).mount('#app');

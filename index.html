@@ -55,8 +55,8 @@
                         </ul>
                         <div class="row">
                             <div class="col-12 d-flex justify-content-between align-items-baseline">
-                                <input class="text_bar " type="text" placeholder="Aggiungi Task">
-                                <button class="bottone_add">+ Aggiungi +</button>
+                                <input class="text_bar " type="text" placeholder="Aggiungi Task" @keyup.enter="AggiungiElemento()" v-model="nuova_task">
+                                <button class="bottone_add" @click="AggiungiElemento()">+ Aggiungi +</button>
                             </div>
                         </div>
 
