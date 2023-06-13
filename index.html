@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center pt-3 pb-3">
-                    <h1>Vue Todolist</h1>
+                    <h1>{{titolo}}</h1>
                 </div>
             </div>
             <div class="row ">
@@ -33,19 +33,7 @@
                         <h3>La mia todolist:</h3>
                         <ul class="list-unstyled pt-3">
                             <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 1 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
-                            <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 2 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
-                            <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 3 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
-                            <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 4 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
-                            <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 5 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
-                            <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 6 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
-                            <hr>
-                            <li class="pt-2 d-flex justify-content-between align-items-baseline">Task 7 <button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
+                            <li v-for = "(task, index) in tasks" class="pt-2 d-flex justify-content-between align-items-baseline">{{task.testo}}<button class="bottone_trash"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button> </li>
                             <hr>
                         </ul>
                         <div class="row">
